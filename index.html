@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>persian boutiqe</title>
+</head>
+<body dir="rtl">
+        <!-- start navbar -->
+        <nav class="navbar1 fixed-top bg-white">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-2">
+                <a class="navbar-brand d-flex align-items-center text-dark" href="#"><img src="/img/logo2.png" alt="" style="width: 50px;height: 50px;"><h2>بوتیک پرشین</h2></a>
+              </div>
+              <div class=" d-none d-md-flex col-md-5">
+                <form class="d-none input-group d-md-flex " role="search">
+                <input class="form-control shadow-none" type="search" placeholder="جست و جو..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="col-4 col-md-5 position-relative">
+              <a href="#" class="text-dark fs-4 me-3 float-end"><i class="fas fa-user"></i></a>
+              <div class="carthover">
+              <a href="shopcart.html" class="text-dark fs-4 mx-3 float-end carticon"><i class="fas fa-shopping-cart"></i></a>
+              <div class="carthoverbody overflow-auto">
+                <table class="table" id="carthoverbodytable">
+                  <thead>
+                    <tr>
+                      <th>اطلاعات محصول</th>
+                      <th>تعداد</th>
+                      <th>قیمت</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar2" style="margin-top: 60px;">
+          <div class="container">
+            <button class="navbar-toggler bg-primary shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-list text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse navbar-m p-1" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    مردانه
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">پیراهن</a></li>
+                    <li><a class="dropdown-item" href="#">شلوار</a></li>
+                    <li><a class="dropdown-item" href="#">تی شرت</a></li>
+                    <li><a class="dropdown-item" href="#">کفش و کتونی</a></li>
+                    <li><a class="dropdown-item" href="#">اکسسوری</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">همه</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    زنانه
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    کودکان
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">ست های خاص</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactus">ارتباط با ما</a>
+                </li>
+              </ul>
+            </div>
+            <form class="d-flex d-md-none" role="search">
+              <input class="form-control" type="search" placeholder="جست و جو..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+        </nav>
+        <!-- end  navbar -->
+    <!-- start header -->
+    <header id="top">
+      <div id="carouselExampleIndicators" class="carousel slide d-none d-md-block" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <div class="row carousel-item1">
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="/img/tp4.jpg" alt="">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="ms-5 ps-5 text-light">
+                  <h1 class="">کفش  ZARA</h1>
+                  <hr>
+                  <p class="fs-5">کفش ارگونومیک زارا انتخابی عالی برای راحتی پا های شما
+                    مناسب برای پیاده روی و محل کار
+                  </p>
+                  <p class="fs-5">مشخصات محصول:</p>
+                  <ul class=" list-group">
+                    <li class=" list-group-item"> سایز :از 38 تا 43</li>
+                    <li class=" list-group-item"> زیره کفش :  UV</li>
+                    <li class=" list-group-item">رویه: نخی</li>
+                    <li class=" list-group-item">ضمانت: تعویض کالا</li>
+                  </ul>
+                  <button class="btn btn-outline-light mt-3 w-25">خرید محصول</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-item2">
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="/img/hp9.jpg" alt="">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="ms-5 ps-5 text-dark">
+                  <h1 class="">کیف دستی  ZARA</h1>
+                  <hr>
+                  <p class="fs-5">کفش ارگونومیک زارا انتخابی عالی برای راحتی پا های شما
+                    مناسب برای پیاده روی و محل کار
+                  </p>
+                  <p class="fs-5">مشخصات محصول:</p>
+                  <ul class=" list-group">
+                    <li class=" list-group-item"> وزن : 400g</li>
+                    <li class=" list-group-item">  جنس بند : چرم</li>
+                    <li class=" list-group-item">رویه: چرم طرح دار</li>
+                    <li class=" list-group-item">ضمانت: تعویض کالا</li>
+                  </ul>
+                  <button class="btn btn-outline-dark mt-3 w-25">خرید محصول</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row carousel-item3">
+              <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="/img/wap3.jpg" alt="">
+              </div>
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="ms-5 ps-5 text-light">
+                  <h1 class="">کفش  ZARA</h1>
+                  <hr>
+                  <p class="fs-5">کفش ارگونومیک زارا انتخابی عالی برای راحتی پا های شما
+                    مناسب برای پیاده روی و محل کار
+                  </p>
+                  <p class="fs-5">مشخصات محصول:</p>
+                  <ul class=" list-group">
+                    <li class=" list-group-item"> سایز :از 38 تا 43</li>
+                    <li class=" list-group-item"> زیره کفش :  UV</li>
+                    <li class=" list-group-item">رویه: نخی</li>
+                    <li class=" list-group-item">ضمانت: تعویض کالا</li>
+                  </ul>
+                  <button class="btn btn-outline-light mt-3 w-25">خرید محصول</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+      <!-- start catalog -->
+      <section id="catalog" dir="ltr">
+        <div class="container">
+          <div class="row catalog">
+            <div class="col-md-4 catalog-col">
+              <a href="">
+                <div class="catalog-item1 chover">
+                  <h1>MEN</h1>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 catalog-col">
+              
+                <div class="row">
+                  <a href="">
+                    <div class="col-12 catalog-item2 chover">
+                      <h1>MAKE UP</h1>
+                    </div>
+                  </a>
+                </div>
+              
+              
+                <div class="row my-1">
+                  <a href="">
+                    <div class="col-12 catalog-item3 chover">
+                      <h1>BAGS</h1>
+                    </div>
+                  </a>
+                </div>
+                <div class="row">
+                  <a href="">
+                    <div class="col-12 catalog-item4 chover">
+                      <h1>WATCHS</h1>
+                    </div>
+                  </a>
+                </div>
+              
+            </div>
+            <div class="col-md-4 catalog-col">
+              <a href="">
+                <div class="col-12 catalog-item5 chover">
+                  <h1>WOMEN</h1>
+                </div>
+              </a>
+              <a href="">
+                <div class="col-12 mt-1 catalog-item6 chover">
+                  <h1>SHOESE</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end catalog -->
+      <!-- start recently  -->
+      <section id="toplikes" class="py-4">
+        <div class="container">
+          <h1 class="w-50 text-center mx-auto shadow my-5">انتخاب های شما</h1>
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center btn-group">
+              <a href="" class="btn btn-outline-dark toplikes-btn-men">مردان</a>
+              <a href="" class="btn btn-outline-dark toplikes-btn-women">زنان</a>
+              <a href="" class="btn btn-outline-dark toplikes-btn-handbag">کیف</a>
+              <a href="" class="btn btn-outline-dark toplikes-btn-shoes">کفش</a>
+              <a href="" class="btn btn-outline-dark toplikes-btn-watch">ساعت</a>
+            </div>
+          </div>
+          <hr>
+          <div class="row py-5 toplikes-list ">
+            <div class="col-md-3 d-flex flex-column align-items-center toplikes-item">
+              <div class="toplikes-header-item d-flex flex-column align-items-center">
+                <img src="/img/tp4.jpg" alt="" class=" img-fluid border" width="250px" height="250px">
+                <button class="toplikes-add-to-cart2 d-block d-lg-none">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+                <button class="toplikes-add-to-cart d-none d-lg-block">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <div class="toplikes-card">
+                <div class="point text-center my-1">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3 class="toplikes-card-title">کفش ZARA</h3>
+                <p class="toplikes-qeymat">قیمت: 1/150/000 تومان</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center toplikes-item">
+              <div class="toplikes-header-item d-flex flex-column align-items-center">
+                <img src="/img/tp4.jpg" alt="" class=" img-fluid border" width="250px" height="250px">
+                <button class="toplikes-add-to-cart2 d-block d-lg-none">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+                <button class="toplikes-add-to-cart d-none d-lg-block">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <div class="toplikes-card">
+                <div class="point text-center my-1">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3 class="toplikes-card-title">کفش ZARA</h3>
+                <p class="toplikes-qeymat">قیمت: 1/150/000 تومان</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center toplikes-item">
+              <div class="toplikes-header-item d-flex flex-column align-items-center">
+                <img src="/img/tp4.jpg" alt="" class=" img-fluid border" width="250px" height="250px">
+                <button class="toplikes-add-to-cart2 d-block d-lg-none">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+                <button class="toplikes-add-to-cart d-none d-lg-block">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <div class="toplikes-card">
+                <div class="point text-center my-1">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3 class="toplikes-card-title">کفش ZARA</h3>
+                <p class="toplikes-qeymat">قیمت: 1/150/000 تومان</p>
+              </div>
+            </div>
+            <div class="col-md-3 d-flex flex-column align-items-center toplikes-item">
+              <div class="toplikes-header-item d-flex flex-column align-items-center">
+                <img src="/img/tp4.jpg" alt="" class=" img-fluid border" width="250px" height="250px">
+                <button class="toplikes-add-to-cart2 d-block d-lg-none">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+                <button class="toplikes-add-to-cart d-none d-lg-block">خرید محصول <i class="fas fa-shopping-cart"></i></button>
+              </div>
+              <div class="toplikes-card">
+                <div class="point text-center my-1">
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star text-warning"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h3 class="toplikes-card-title">کفش ZARA</h3>
+                <p class="toplikes-qeymat">قیمت: 1/150/000 تومان</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end recently -->
+      <!-- start company modiran -->
+      <section class="company py-4">
+        <div class="container">
+          <h1 class="py-3 text-center mx-auto shadow my-3 text-light">مدیران فروش </h1>
+          <p class="text-center text-muted lead">برای خریدی راحت و دلچسب میتوانید از مدیران فروش ما کمک بگیرید تا شما را راهنمایی نمایند</p>
+          <div class="row modforosh py-4 text-white">
+            <div class="col-md-4">
+              <div class="modforosh-item d-flex flex-column align-items-center">
+                <img src="/img/c1.png" class="mod-img" alt="" width="250px" height="250px">
+                <h3 class=" my-3 border-bottom py-2">امیررضا دهنمکی</h3>
+                <h5 class="text-primary">مدیر فروش مردان</h5>
+                <p>تلفن تماس :09123456789</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="modforosh-item d-flex flex-column align-items-center">
+                <img src="/img/c2.png" class="mod-img" alt="" width="250px" height="250px">
+                <h3 class=" my-3 border-bottom py-2">شهلا شهلایی</h3>
+                <h5 class="text-primary">مدیر فروش زنان</h5>
+                <p>تلفن تماس :09123456789</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="modforosh-item d-flex flex-column align-items-center">
+                <img src="/img/c3.png" class="mod-img" alt="" width="250px" height="250px">
+                <h3 class=" my-3 border-bottom py-2">کبری ذوقی</h3>
+                <h5 class="text-primary">مدیر فروش لوازم ارایشی و اکسسوری</h5>
+                <p>تلفن تماس :09123456789</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- end company modiran -->
+      <!-- start whyus -->
+      <section class="whyus py-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="ms-3 fw-bold my-3">چرا بوتیک <span class="text-primary">پرشین</span>؟</h1>
+              <hr>
+              <hr>
+              <div class="row my-4 g-5">
+                <div class="col-lg-6">
+                  <div class="whyus-card d-flex align-items-center">
+                    <i class="fa-solid fa-truck-fast whyus-icon"></i>
+                    <div class="whyus-card-body ms-2">
+                      <h2>ارسال <span class="text-primary">رایگان</span> و سریع</h2>
+                      <p class="text-muted">با خرید از مجموعه ما مرسوله خود را به صورت رایگان و در سریع ترین زمان ممکن دریافت کنید</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="whyus-card d-flex align-items-center">
+                    <i class="fa-solid fa-handshake whyus-icon"></i>
+                    <div class="whyus-card-body ms-2">
+                      <h2>ضمانت <span class="text-primary">تعویض</span> کالا</h2>
+                      <p class="text-muted">با خرید از مجموعه ما مرسوله خود را به صورت رایگان و در سریع ترین زمان ممکن دریافت کنید</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="whyus-card d-flex align-items-center">
+                    <i class="fa-regular fa-circle-check whyus-icon"></i>
+                    <div class="whyus-card-body ms-2">
+                      <h2>ضمانت <span class="text-primary">اصل</span> بودن کالا</h2>
+                      <p class="text-muted">با خرید از مجموعه ما مرسوله خود را به صورت رایگان و در سریع ترین زمان ممکن دریافت کنید</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="whyus-card d-flex align-items-center">
+                    <i class="fa-solid fa-credit-card whyus-icon"></i>
+                    <div class="whyus-card-body ms-2">
+                      <h2>تضمین قیمت کالا</h2>
+                      <p class="text-muted">با خرید از مجموعه ما مرسوله خود را به صورت رایگان و در سریع ترین زمان ممکن دریافت کنید</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <hr>
+            </div>
+            <div class="col-md-6">
+              <img src="/img/vecteezy_postal-courier-arranges-customer-packages-ready-to-be-delivered_5532094.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end whyus -->
+      <!-- start ertbat ba ma -->
+      <section class="contactus py-4" id="contactus">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h1 class="text-center w-75 shadow p-2 my-5"> ارتباط با ما</h1>
+            <div class="row">
+              <div class="col-md-4 d-flex flex-column justify-content-center  align-items-center ertebat-item">
+                <i class="fas fa-phone text-secondary mb-4 fs-1"></i>
+                <h3>تلفن:</h3>
+                <p class="text-muted" dir="ltr">021 - 12345678</p>
+              </div>
+              <div class="col-md-4 d-flex flex-column justify-content-center  align-items-center ertebat-item">
+                <i class="fas fa-map text-secondary mb-4 fs-1"></i>
+                <h3>ادرس:</h3>
+                <p class="text-muted">ادرس دفتر:</p>
+              </div>
+              <div class="col-md-4 d-flex flex-column justify-content-center  align-items-center ertebat-item">
+                <i class="fas fa-envelope text-secondary mb-4 fs-1"></i>
+                <h3>ایمیل:</h3>
+                <p class="text-muted" dir="ltr">amiranamlak@gmail.com</p>
+              </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                  <div class="form-ertbat d-flex flex-column align-items-center">
+                  <input type="text" class="form-i w-50 my-2" placeholder="نام و نام خانوادگی:">
+                  <input type="email" class="form-i w-50 my-2" placeholder="email:">
+                  <input type="text" class="form-i w-50 my-2" placeholder="موضوع:">
+                  <textarea class="form-i w-50 my-2" placeholder="متن پیام:"  name="" id="" cols="30" rows="5"></textarea>
+                  <button class="btn btn-primary w-50 my-2 py-1 text-light border-0 rounded-1">ارسال</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end ertbat ba ma -->
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer >
+      <div class="container">
+        <div class="row align-items-center footrow" height="300px">
+          <div class="col-md-4">
+            <div class="d-flex align-items-center justify-content-center  text-white">
+              <img src="/img/logo2.png" alt="" style="width: 50px;height: 50px;">
+               <h1>بوتیک پرشین</h1>
+            </div>
+          </div>
+          <div class="col-md-4">
+            
+              <ul class="shabake-menu d-flex justify-content-center">
+                  <a href="#" class="menu-item mx-2 text-primary fs-3"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="menu-item mx-2 text-primary fs-3"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="menu-item mx-2 text-primary fs-3"><i class="fab fa-telegram"></i></a>
+                  <a href="#" class="menu-item mx-2 text-primary fs-3"><i class="fab fa-facebook"></i></a>
+              </ul>
+          
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-white text-center">تمام حقوق سایت متعلق به ما است</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="assets/bootstrap/jquery-3.6.0.min.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
